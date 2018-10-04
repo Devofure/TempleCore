@@ -1,12 +1,13 @@
 package com.devofure.templecore
 
-import com.devofure.templecore.di._core.DaggerApplication
 import com.devofure.templecore.di._core.AppComponent
 import com.devofure.templecore.di._core.AppInjector
+import com.devofure.templecore.di._core.DaggerApplication
 import com.squareup.leakcanary.LeakCanary
 
 class MainApplication : DaggerApplication() {
 
+    //to be use when injecting custom components as Android Workers or Android Services
     lateinit var component: AppComponent
 
     override fun onCreate() {

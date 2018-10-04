@@ -1,0 +1,1 @@
+Workers that are run be the app, like daily sync or any type if scheduler worker.
